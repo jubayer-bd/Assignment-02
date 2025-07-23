@@ -2,6 +2,13 @@
   padding: 0;
   margin: 0;
 }
+.btn-primary {
+  background: rgb(233, 90, 8);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+
 .container {
   max-width: 1350px;
 }
@@ -45,6 +52,7 @@ header {
   font-weight: 700;
   width: 35.625rem;
   margin-bottom: 10px;
+  font-family: Noto Serif;
 }
 .banner-clr {
   color: rgb(233, 90, 8);
@@ -54,9 +62,62 @@ header {
   font-size: 1.125rem;
   font-weight: 400;
   width: 35.625rem;
+  font-family: Inter;
 }
 .banner-right {
   width: 570px;
   margin-left: 13.125rem;
   display: block;
+}
+/* plant */
+.plant-heading {
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.plant-heading h2 {
+  font-family: Noto Serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 800px;
+}
+.plant-heading p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 400;
+  width: 800px;
+  text-align: center;
+  margin: auto;
+}
+/* Plant-container */
+.plants-container {
+  margin: auto;
+  height: auto;
+  border: 2px solid tomato;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+.plant-card {
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.plant-card img {
+  width: 300px;
+  /* height: 322.94px; */
+  margin-bottom: 5px;
+}
+.plant-card p {
+  margin-bottom: 5px;
+  color: rgb(17, 17, 17);
+  font-family: Inter;
+  font-size: 18px;
 }
