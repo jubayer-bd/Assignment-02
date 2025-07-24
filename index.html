@@ -8,12 +8,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,10 +31,10 @@
         </div>
         <div class="menu-item">
           <ul>
-            <li>Home</li>
-            <li class="li-clr">Shop</li>
-            <li class="li-clr">About us </li>
-            <li>
+            <li class="desktop-only">Home</li>
+            <li class="li-clr desktop-only">Shop</li>
+            <li class="li-clr desktop-only">About us</li>
+            <li class="cart-item">
               <div>
                 <span><i class="fa-solid fa-cart-shopping"></i></span>
                 <span>Cart ($56)</span>
@@ -58,7 +55,9 @@
           </p>
         </div>
         <div class="banner-right">
-          <figure><img src="./assets/hero-flower.png" alt="" /></figure>
+          <figure>
+            <img src="./assets/hero-flower.png" alt="Hero Flower" />
+          </figure>
         </div>
       </section>
     </header>
@@ -74,62 +73,63 @@
       </section>
       <section class="plants-container container">
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
         <div class="plant-card">
-          <img src="./assets/sample-flower-image.png" alt="" />
+          <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
           <p>Lily Blossom</p>
           <p>20 USD</p>
           <button class="btn-primary">ADD TO CART</button>
         </div>
       </section>
       <section class="trust-section">
+        <!-- The trusted badge is now visible on desktop and hidden on mobile via CSS -->
         <figure class="trusted-badge">
-          <img src="./assets/trusted-badge.png" alt="" />
+          <img src="./assets/trusted-badge.png" alt="Trusted Badge" />
         </figure>
         <!-- Flower and Plants Lovers -->
         <section class="lover-container container">
           <div class="lover-left">
-            <img src="./assets/flower-store.png" alt="" />
+            <img src="./assets/flower-store.png" alt="Flower Store" />
           </div>
           <div class="lover-right">
             <h2>Flower & Plants Lover</h2>
@@ -202,28 +202,22 @@
           </p>
         </div>
         <div class="about-features">
-            <div>Home</div>
-            <div>Features</div>
-            <div>Blog</div>
-            <div>FAQ</div>
-            <div>Contact Us</div>
-            <div>About Us</div>
-            <div>Pricing</div>
-            <div>Privacy Policy</div>
-            <div>Terms of Service</div>
-            <div>Help Center</div>
-          </div>
+          <div>Home</div>
+          <div>Features</div>
+          <div>Blog</div>
+          <div>FAQ</div>
+          <div>Contact Us</div>
+          <div>About Us</div>
+          <div>Pricing</div>
+          <div>Privacy Policy</div>
+          <div>Terms of Service</div>
+          <div>Help Center</div>
         </div>
         <div class="about-social-media">
-          <div> <img src="./assets/icon-linkedin.png" alt="" /></div>
-          <div><img src="./assets/icon-twitter.png" alt="" /></div>
-          <div> <img src="./assets/icon-facebook.png" alt="" /></div>
-          <div><img src="./assets/icon-youtube.png" alt="" /></div>
-           
-            
-           
-            
-        
+          <div><img src="./assets/icon-linkedin.png" alt="LinkedIn" /></div>
+          <div><img src="./assets/icon-twitter.png" alt="Twitter" /></div>
+          <div><img src="./assets/icon-facebook.png" alt="Facebook" /></div>
+          <div><img src="./assets/icon-youtube.png" alt="YouTube" /></div>
         </div>
       </section>
     </footer>

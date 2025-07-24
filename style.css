@@ -8,16 +8,20 @@
   border: none;
   color: rgb(255, 255, 255);
   padding: 10px 20px;
+  border-radius: 5px; /* Added for consistency */
 }
 
 body,
 html {
   background: #f3f3f3;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Ensure no horizontal scroll */
+  font-family: "Inter", sans-serif; /* Ensure Inter is the default font */
 }
 .container {
   max-width: 1350px;
+  margin: 0 auto; /* Centering the container */
+  padding: 0 20px; /* Added horizontal padding for smaller screens */
 }
 
 /* nav-bar */
@@ -32,6 +36,8 @@ header {
   align-items: center;
 }
 .logo h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem; /* Adjusted for better mobile scaling */
 }
 .menu-item ul {
   display: flex;
@@ -46,20 +52,30 @@ header {
   color: rgb(137, 135, 161);
 }
 
+/* Hide desktop-only menu items by default on small screens */
+.desktop-only {
+  display: list-item; /* Default for desktop */
+}
+
 /* banner */
 .banner-container {
   display: flex;
   align-items: center;
   margin-top: 120px;
+  /* flex-wrap: wrap; - moved to media query */
+  /* text-align: center; - moved to media query */
+  /* justify-content: center; - moved to media query */
 }
 .banner-left {
+  flex: 1; /* Allow banner-left to take available space */
+  min-width: 300px; /* Minimum width to prevent content from becoming too narrow */
 }
 .banner-left h2 {
   font-size: 3.125rem;
   font-weight: 700;
-  width: 35.625rem;
+  width: 35.625rem; /* Original desktop width */
   margin-bottom: 10px;
-  font-family: Noto Serif;
+  font-family: "Noto Serif", serif;
 }
 .banner-clr {
   color: rgb(233, 90, 8);
@@ -68,14 +84,19 @@ header {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.125rem;
   font-weight: 400;
-  width: 35.625rem;
-  font-family: Inter;
+  width: 35.625rem; /* Original desktop width */
+  font-family: "Inter", sans-serif;
 }
 .banner-right {
-  width: 570px;
-  margin-left: 13.125rem;
+  width: 570px; /* Original desktop width */
+  margin-left: 13.125rem; /* Original desktop margin */
   display: block;
 }
+.banner-right figure img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+}
+
 /* plant */
 .plant-heading {
   margin: auto;
@@ -84,20 +105,19 @@ header {
   margin-bottom: 40px;
 }
 .plant-heading h2 {
-  font-family: Noto Serif;
+  font-family: "Noto Serif", serif;
   font-size: 3.125rem;
   font-weight: 700;
   text-align: center;
-  margin: auto;
-  margin-bottom: 1rem;
-  width: 50rem;
+  margin: 0 auto 1rem auto;
+  width: 50rem; /* Original desktop width */
 }
 .plant-heading p {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  width: 50rem;
+  width: 50rem; /* Original desktop width */
   text-align: center;
   margin: auto;
 }
@@ -106,25 +126,25 @@ header {
   margin: auto;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* Default for desktop */
   gap: 10px;
   justify-items: center;
 }
 .plant-card {
   align-items: center;
   text-align: center;
-  width: 18.75rem;
+  width: 18.75rem; /* Original desktop width */
   margin-bottom: 20px;
 }
 .plant-card img {
-  width: 300px;
-  /* height: 322.94px; */
+  width: 300px; /* Original desktop width */
+  height: auto; /* Maintain aspect ratio */
   margin-bottom: 5px;
 }
 .plant-card p {
   margin-bottom: 5px;
   color: rgb(17, 17, 17);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.125rem;
 }
 .plant-card button {
@@ -137,49 +157,78 @@ header {
   margin: auto;
   display: flex;
   gap: 4rem;
-  /* border: 1px solid; */
   margin-top: 150px;
-  /* position: relative; */
+  /* flex-wrap: wrap; - moved to media query */
+  /* justify-content: center; - moved to media query */
+  /* text-align: center; - moved to media query */
+}
+
+.lover-left {
+  /* width: 100%; - moved to media query */
+  max-width: 600px; /* Max width for desktop */
+}
+
+.lover-left img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+}
+
+.lover-right {
+  /* width: 100%; - moved to media query */
+  max-width: 500px; /* Max width for desktop */
 }
 
 .lover-right h2 {
   color: rgb(0, 0, 0);
-  font-family: Noto Serif;
+  font-family: "Noto Serif", serif;
   font-size: 3.125rem;
   font-weight: 700;
-  line: height 3.5rem;
-  text-align: left;
-  width: 500px;
+  line-height: 3.5rem;
+  text-align: left; /* Original desktop alignment */
+  width: 500px; /* Original desktop width */
 }
 .lover-right li {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
-  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem; /* Adjusted for better mobile readability */
   font-weight: 400;
-  line: height 1.375rem;
+  line-height: 1.7; /* Adjusted for better readability */
   margin-top: 1.7rem;
-  padding-right: 15px;
+  padding-right: 15px; /* Original desktop padding */
+  text-align: left; /* Keep list item text left-aligned */
 }
 .lover-right ul {
-  padding-left: 40px;
+  padding-left: 40px; /* Original desktop padding */
+  /* text-align: left; - already default */
 }
 
-.trusted-badge img {
+/* Trusted badge styling - visible on desktop by default */
+.trusted-badge {
+  display: block; /* Ensure it's visible on desktop */
   width: 200px;
   height: 200px;
   position: absolute;
-  left: 500px;
-  top: -90px;
+  left: 500px; /* Original desktop position */
+  top: -90px; /* Original desktop position */
+  z-index: 1; /* Ensure it's above other elements if needed */
 }
+.trusted-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the image fits within the container */
+}
+
 .trust-section {
   position: relative;
+  margin-top: 50px; /* Add some top margin for mobile */
 }
 .latest-deal-heading {
   margin: auto;
+  text-align: center;
   margin-top: 120px;
 }
 .latest-deal-heading h2 {
-  font-family: Noto Serif;
+  font-family: "Noto Serif", serif;
   font-size: 3.125rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -187,13 +236,13 @@ header {
 }
 .latest-deal-heading p {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 30px;
   margin: auto;
   text-align: center;
-  width: 800px;
+  width: 800px; /* Original desktop width */
   margin-bottom: 120px;
 }
 /* Latest Deal Container  */
@@ -203,12 +252,11 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-auto-rows: 200px; */
+  grid-template-columns: repeat(2, 1fr); /* Default for desktop */
   gap: 20px;
-  /* width: 100%; */
   max-width: 1270px;
   margin: auto;
+  padding: 0 20px; /* Added horizontal padding */
 }
 
 .img-box {
@@ -220,32 +268,28 @@ header {
   background-size: cover;
   background-position: center;
   flex-direction: column;
-  font-family: Noto Serif;
+  font-family: "Noto Serif", serif;
   font-weight: 700;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  width: 450px; /* Original desktop width */
+  height: 200px; /* Set a default height */
+  border-radius: 15px;
 }
 
-/* Individual backgrounds */
+/* Individual backgrounds - adjusted for responsiveness */
 .img1 {
   background-image: url("./assets/deal-bloom.png");
-  border-radius: 15px;
-  width: 450px;
-  height: 200px;
 }
 
 .img2 {
   background-image: url("./assets/deal-zabo.png");
-  grid-row: span 2;
-  width: 800px;
-  height: 420px;
-  border-radius: 15px;
+  grid-row: span 2; /* Still spans 2 rows on desktop */
+  width: 800px; /* Original desktop width */
+  height: 420px; /* Maintain height for desktop */
 }
 
 .img3 {
   background-image: url("./assets/deal-ana.png");
-  border-radius: 15px;
-  width: 450px;
-  height: 200px;
 }
 
 /* Contact */
@@ -269,16 +313,15 @@ header {
 }
 
 .contact-container h2 {
-  font-size: 1rem;
+  font-size: 40px; /* Original desktop font size */
   color: white;
   margin-bottom: 20px;
-  font-family: Noto Serif;
-  font-size: 40px;
+  font-family: "Noto Serif", serif;
 }
 
 /* Email Form */
 .form-container {
-  display: flex;
+  display: flex; /* Original desktop display */
   justify-content: center;
   max-width: 600px;
   margin: 0 auto;
@@ -293,13 +336,16 @@ input[type="email"] {
   border: none;
   font-size: 1rem;
   outline: none;
+  /* width: 100%; - moved to media query */
+  /* margin-bottom: 10px; - moved to media query */
 }
 
 button {
-  padding: 0 25px;
+  padding: 0 25px; /* Original desktop padding */
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  /* width: 100%; - moved to media query */
 }
 
 button:hover {
@@ -311,35 +357,357 @@ button:hover {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  /* flex-wrap: wrap; - moved to media query */
+  /* text-align: center; - moved to media query */
 }
 
 .about-social-media {
-  width: 20%;
+  width: 20%; /* Original desktop width */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* Original desktop alignment */
   align-items: center;
   justify-items: center;
-  margin-top: -150px;
+  margin-top: -150px; /* Original desktop margin */
+  margin-bottom: 20px;
+}
+.about-social-media div {
+  margin: 0 10px; /* Space out social media icons */
 }
 .about-logo {
-  width: 33%;
+  width: 33%; /* Original desktop width */
+  /* margin-bottom: 30px; - moved to media query */
 }
 .about-logo p {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
-  width: 350px;
+  width: 350px; /* Original desktop width */
   margin-top: 15px;
 }
 .about-features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Default for desktop */
   gap: 10px;
   color: rgb(107, 114, 128);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  text-align: left;
-  width: 47%;
+  text-align: left; /* Original desktop alignment */
+  width: 47%; /* Original desktop width */
   margin-bottom: 30px;
+}
+
+/* Mobile Responsiveness for iPhone 14/14 Pro (and similar small screens) */
+@media (max-width: 430px) {
+  /* Max width for iPhone 14 Pro is 430px */
+  .container {
+    padding: 0 15px; /* Reduce padding for very small screens */
+  }
+
+  .nav {
+    padding: 0 10px; /* Add padding to nav for very small screens */
+  }
+
+  .menu-item ul {
+    display: flex; /* Keep flex for the cart item */
+    justify-content: flex-end; /* Push cart to the right */
+    width: 100%;
+    padding: 0; /* Remove padding from ul */
+  }
+
+  .menu-item ul .desktop-only {
+    display: none; /* Hide "Home", "Shop", "About us" on mobile */
+  }
+
+  .menu-item ul .cart-item {
+    display: block; /* Ensure cart item is visible */
+    margin-right: 0; /* Remove any extra margin */
+  }
+
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px; /* Adjust top margin for mobile */
+  }
+  .banner-left {
+    width: 100%; /* Full width for mobile */
+    min-width: unset; /* Remove min-width for mobile */
+  }
+  .banner-left h2 {
+    font-size: 2.2rem; /* Smaller font size for mobile */
+    line-height: 1.2;
+    width: 100%; /* Full width for mobile */
+  }
+
+  .banner-left p {
+    font-size: 1rem; /* Smaller font size for mobile */
+    width: 100%; /* Full width for mobile */
+  }
+  .banner-right {
+    width: 100%; /* Full width for mobile */
+    margin-left: 0; /* Reset margin for mobile */
+    margin-top: 40px; /* Add space between text and image on mobile */
+  }
+
+  .plants-container {
+    grid-template-columns: 1fr; /* Changed to 1 column for very small screens to match image */
+    gap: 20px; /* Increased gap for better spacing */
+  }
+
+  .plant-heading h2 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    width: 100%; /* Full width for mobile */
+  }
+
+  .plant-heading p {
+    font-size: 1rem; /* Smaller font size for mobile */
+    width: 100%; /* Full width for mobile */
+  }
+  .plant-card {
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Keep a max-width for cards to prevent stretching too wide */
+  }
+  .plant-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lover-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .lover-left {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .lover-right {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .lover-right h2 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    line-height: 1.2;
+    width: 100%; /* Full width for mobile */
+  }
+
+  .lover-right li {
+    font-size: 1rem; /* Smaller font size for mobile */
+    padding-right: 0; /* Reset padding for mobile */
+  }
+
+  .lover-right ul {
+    padding-left: 20px; /* Adjusted for mobile */
+  }
+
+  .latest-deal-heading h2 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  .latest-deal-heading p {
+    font-size: 1rem; /* Smaller font size for mobile */
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 60px; /* Adjust margin */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    gap: 15px;
+  }
+
+  .img-box {
+    height: 180px; /* Adjust height for mobile */
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    width: 100%; /* Full width for mobile */
+  }
+
+  .img2 {
+    height: 360px; /* Adjust height for mobile */
+    grid-row: span 1; /* Do not span rows on mobile */
+    width: 100%; /* Full width for mobile */
+  }
+
+  .contact-container {
+    height: 300px; /* Adjust height for mobile */
+    padding: 40px 15px;
+  }
+
+  .contact-container h2 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .form-container {
+    flex-direction: column; /* Stack elements vertically for mobile */
+  }
+
+  input[type="email"] {
+    width: 90%; /* Adjust width for better spacing */
+    margin: 0 auto 10px auto; /* Center and add margin */
+  }
+
+  button {
+    padding: 15px 25px; /* Adjust padding for better touch target */
+    width: 90%; /* Adjust width for better spacing */
+    margin: 0 auto; /* Center button */
+  }
+
+  .About {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  }
+
+  .about-social-media {
+    width: 100%; /* Full width for mobile */
+    justify-content: center; /* Center icons for mobile */
+    margin-top: 30px; /* Adjusted margin for mobile */
+  }
+
+  .about-logo {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 30px;
+  }
+  .about-logo p {
+    width: 100%; /* Full width for mobile */
+    margin: 15px auto 0 auto; /* Center for mobile */
+  }
+
+  .about-features {
+    grid-template-columns: 1fr; /* Single column for features on mobile */
+    text-align: center;
+    width: 100%; /* Full width for mobile */
+  }
+
+  .trusted-badge {
+    display: none; /* Hide trusted badge on mobile */
+  }
+}
+
+/* General Tablet/Medium Screen Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .nav {
+    padding: 0 15px; /* Adjust padding for tablet */
+  }
+
+  .menu-item ul {
+    display: flex; /* Keep flex for the cart item */
+    justify-content: flex-end; /* Push cart to the right */
+    width: 100%;
+    padding: 0; /* Remove padding from ul */
+  }
+
+  .menu-item ul .desktop-only {
+    display: none; /* Hide "Home", "Shop", "About us" on tablet */
+  }
+
+  .menu-item ul .cart-item {
+    display: block; /* Ensure cart item is visible */
+  }
+
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .banner-left,
+  .banner-right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .banner-right {
+    margin-top: 30px;
+  }
+
+  .plants-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  .lover-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .lover-left,
+  .lover-right {
+    width: 100%;
+  }
+
+  .lover-right ul {
+    padding-left: 0; /* Adjust padding for tablet */
+  }
+
+  .lover-right li {
+    text-align: center; /* Center list items on tablet */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for tablets */
+  }
+
+  .img-box {
+    width: 100%; /* Make them responsive */
+  }
+
+  .img2 {
+    grid-row: span 1; /* No row span on tablets */
+    width: 100%; /* Full width for tablets */
+  }
+
+  .contact-container {
+    padding: 60px 20px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .About {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .about-logo,
+  .about-features,
+  .about-social-media {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-features {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columns for features on tablet */
+    text-align: center;
+  }
+
+  .trusted-badge {
+    display: none; /* Hide trusted badge on tablet */
+  }
 }
