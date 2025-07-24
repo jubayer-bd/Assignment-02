@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 .btn-primary {
   background: rgb(233, 90, 8);
@@ -9,6 +10,9 @@
   padding: 10px 20px;
 }
 
+body {
+  background: #f3f3f3;
+}
 .container {
   max-width: 1350px;
 }
@@ -83,14 +87,14 @@ header {
   text-align: center;
   margin: auto;
   margin-bottom: 1rem;
-  width: 800px;
+  width: 50rem;
 }
 .plant-heading p {
   color: rgba(0, 0, 0, 0.5);
   font-family: Inter;
   font-size: 1.125rem;
   font-weight: 400;
-  width: 800px;
+  width: 50rem;
   text-align: center;
   margin: auto;
 }
@@ -98,7 +102,6 @@ header {
 .plants-container {
   margin: auto;
   height: auto;
-  border: 2px solid tomato;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -107,7 +110,7 @@ header {
 .plant-card {
   align-items: center;
   text-align: center;
-  width: 300px;
+  width: 18.75rem;
   margin-bottom: 20px;
 }
 .plant-card img {
@@ -119,5 +122,76 @@ header {
   margin-bottom: 5px;
   color: rgb(17, 17, 17);
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
+.plant-card button {
+  margin-top: 1rem;
+}
+
+/* Flower and Plants Lovers */
+
+.lover-container {
+  margin: auto;
+  display: flex;
+  gap: 4rem;
+  /* border: 1px solid; */
+  margin-top: 150px;
+  /* position: relative; */
+}
+
+.lover-right h2 {
+  color: rgb(0, 0, 0);
+  font-family: Noto Serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  line: height 3.5rem;
+  text-align: left;
+  width: 500px;
+}
+.lover-right li {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  line: height 1.375rem;
+  margin-top: 1.7rem;
+  padding-right: 15px;
+}
+.lover-right ul {
+  padding-left: 40px;
+}
+
+.trusted-badge img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 500px;
+  top: -90px;
+}
+.trust-section {
+  position: relative;
+}
+.latest-deal-heading {
+  margin: auto;
+  margin-top: 120px;
+}
+.latest-deal-heading h2 {
+  font-family: Noto Serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.latest-deal-heading p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin: auto;
+  text-align: center;
+  width: 800px;
+  margin-bottom: 120px;
+}
+/* Latest Deal Container  */
+
