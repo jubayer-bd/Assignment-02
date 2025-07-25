@@ -68,7 +68,7 @@ header {
 .banner-left h2 {
   font-size: 3.125rem;
   font-weight: 700;
-  width: 35.625rem; 
+  width: 35.625rem;
   margin-bottom: 10px;
   font-family: "Noto Serif", serif;
 }
@@ -79,16 +79,16 @@ header {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.125rem;
   font-weight: 400;
-  width: 35.625rem; 
+  width: 35.625rem;
   font-family: "Inter", sans-serif;
 }
 .banner-right {
-  width: 570px; 
-  margin-left: 13.125rem; 
+  width: 570px;
+  margin-left: 13.125rem;
   display: block;
 }
 .banner-right figure img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -105,14 +105,14 @@ header {
   font-weight: 700;
   text-align: center;
   margin: 0 auto 1rem auto;
-  width: 50rem; 
+  width: 50rem;
 }
 .plant-heading p {
   color: rgba(0, 0, 0, 0.5);
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  width: 50rem; 
+  width: 50rem;
   text-align: center;
   margin: auto;
 }
@@ -128,12 +128,12 @@ header {
 .plant-card {
   align-items: center;
   text-align: center;
-  width: 18.75rem; 
+  width: 18.75rem;
   margin-bottom: 20px;
 }
 .plant-card img {
-  width: 300px; 
-  height: auto; 
+  width: 300px;
+  height: auto;
   margin-bottom: 5px;
 }
 .plant-card p {
@@ -153,20 +153,19 @@ header {
   display: flex;
   gap: 4rem;
   margin-top: 150px;
-  
 }
 
 .lover-left {
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .lover-left img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
 .lover-right {
-  max-width: 500px; 
+  max-width: 500px;
 }
 
 .lover-right h2 {
@@ -175,38 +174,36 @@ header {
   font-size: 3.125rem;
   font-weight: 700;
   line-height: 3.5rem;
-  text-align: left; 
-  width: 500px; 
+  text-align: left;
+  width: 500px;
 }
 .lover-right li {
   color: rgba(0, 0, 0, 0.5);
   font-family: "Inter", sans-serif;
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.7; 
+  line-height: 1.7;
   margin-top: 1.7rem;
   padding-right: 15px;
-  text-align: left; 
+  text-align: left;
 }
 .lover-right ul {
-  padding-left: 40px; 
- 
+  padding-left: 40px;
 }
 
-
 .trusted-badge {
-  display: block; 
+  display: block;
   width: 200px;
   height: 200px;
   position: absolute;
-  left: 500px; 
-  top: -90px; 
-  z-index: 1; 
+  left: 500px;
+  top: -90px;
+  z-index: 1;
 }
 .trusted-badge img {
   width: 100%;
   height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .trust-section {
@@ -233,7 +230,7 @@ header {
   line-height: 30px;
   margin: auto;
   text-align: center;
-  width: 800px; 
+  width: 800px;
   margin-bottom: 120px;
 }
 /* Latest Deal Container  */
@@ -243,11 +240,11 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 1270px;
   margin: auto;
-  padding: 0 20px; 
+  padding: 0 20px;
 }
 
 .img-box {
@@ -262,8 +259,8 @@ header {
   font-family: "Noto Serif", serif;
   font-weight: 700;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  width: 450px; 
-  height: 200px; 
+  width: 450px;
+  height: 200px;
   border-radius: 15px;
 }
 
@@ -274,9 +271,9 @@ header {
 
 .img2 {
   background-image: url("./assets/deal-zabo.png");
-  grid-row: span 2; 
-  width: 800px; 
-  height: 420px; 
+  grid-row: span 2;
+  width: 800px;
+  height: 420px;
 }
 
 .img3 {
@@ -314,7 +311,7 @@ header {
 .form-container {
   display: flex;
   justify-content: center;
-  
+
   max-width: 600px;
   margin: 0 auto;
   background: white;
@@ -349,23 +346,22 @@ button:hover {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  
 }
 
 .about-social-media {
-  width: 20%; 
+  width: 20%;
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   align-items: center;
   justify-items: center;
-  margin-top: -150px; 
+  margin-top: -150px;
   margin-bottom: 20px;
 }
 .about-social-media div {
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 .about-logo {
-  width: 33%; 
+  width: 33%;
 }
 .about-logo p {
   color: rgba(0, 0, 0, 0.5);
@@ -376,40 +372,40 @@ button:hover {
 }
 .about-features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   color: rgb(107, 114, 128);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  text-align: left; 
-  width: 47%; 
+  text-align: left;
+  width: 47%;
   margin-bottom: 30px;
 }
 
 /* Mobile Responsiveness for iPhone 14/14 Pro */
 @media (max-width: 430px) {
   .container {
-    padding: 0 15px; 
+    padding: 0 15px;
   }
 
   .nav {
-    padding: 0 10px; 
+    padding: 0 10px;
   }
 
   .menu-item ul {
-    display: flex; 
-    justify-content: flex-end; 
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    padding: 0; 
+    padding: 0;
   }
 
   .menu-item ul .desktop-only {
-    display: none; 
+    display: none;
   }
 
   .menu-item ul .cart-item {
-    display: block; 
+    display: block;
     margin-right: 0;
   }
 
@@ -426,38 +422,38 @@ button:hover {
     min-width: unset;
   }
   .banner-left h2 {
-    font-size: 2.2rem; 
+    font-size: 2.2rem;
     line-height: 1.2;
     width: 100%;
   }
 
   .banner-left p {
-    font-size: 1rem; 
-    width: 100%; 
+    font-size: 1rem;
+    width: 100%;
   }
   .banner-right {
-    width: 100%; 
-    margin-left: 0; 
-    margin-top: 40px; 
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
   }
 
   .plants-container {
-    grid-template-columns: 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .plant-heading h2 {
-    font-size: 2.5rem; 
-    width: 100%; 
+    font-size: 2.5rem;
+    width: 100%;
   }
 
   .plant-heading p {
-    font-size: 1rem; 
-    width: 100%; 
+    font-size: 1rem;
+    width: 100%;
   }
   .plant-card {
-    width: 100%; 
-    max-width: 300px; 
+    width: 100%;
+    max-width: 300px;
   }
   .plant-card img {
     width: 100%;
@@ -472,57 +468,57 @@ button:hover {
   }
 
   .lover-left {
-    width: 100%; 
+    width: 100%;
   }
 
   .lover-right {
-    width: 100%; 
+    width: 100%;
   }
 
   .lover-right h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     line-height: 1.2;
-    width: 100%; 
+    width: 100%;
   }
 
   .lover-right li {
-    font-size: 1rem; 
-    padding-right: 0; 
+    font-size: 1rem;
+    padding-right: 0;
   }
 
   .lover-right ul {
-    padding-left: 20px; 
+    padding-left: 20px;
   }
 
   .latest-deal-heading h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .latest-deal-heading p {
-    font-size: 1rem; 
-    width: 100%; 
+    font-size: 1rem;
+    width: 100%;
     margin-bottom: 60px;
   }
 
   .grid-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
   .img-box {
-    height: 180px; 
-    font-size: 1.2rem; 
-    width: 100%; 
+    height: 180px;
+    font-size: 1.2rem;
+    width: 100%;
   }
 
   .img2 {
-    height: 360px; 
-    grid-row: span 1; 
-    width: 100%; 
+    height: 360px;
+    grid-row: span 1;
+    width: 100%;
   }
 
   .contact-container {
-    height: 300px; 
+    height: 300px;
     padding: 40px 15px;
   }
 
@@ -551,32 +547,32 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 
   .about-social-media {
-    width: 100%; 
-    justify-content: center; 
-    margin-top: 30px; 
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
   }
 
   .about-logo {
-    width: 100%; 
+    width: 100%;
     margin-bottom: 30px;
   }
   .about-logo p {
-    width: 100%; 
-    margin: 15px auto 0 auto; 
+    width: 100%;
+    margin: 15px auto 0 auto;
   }
 
   .about-features {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     text-align: center;
-    width: 100%; 
+    width: 100%;
   }
 
   .trusted-badge {
-    display: none; 
+    display: none;
   }
 }
 
@@ -591,18 +587,18 @@ button:hover {
   }
 
   .menu-item ul {
-    display: flex; 
-    justify-content: flex-end; 
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    padding: 0; 
+    padding: 0;
   }
 
   .menu-item ul .desktop-only {
-    display: none; 
+    display: none;
   }
 
   .menu-item ul .cart-item {
-    display: block; 
+    display: block;
   }
 
   .banner-container {
@@ -624,7 +620,7 @@ button:hover {
   }
 
   .plants-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .lover-container {
@@ -640,24 +636,24 @@ button:hover {
   }
 
   .lover-right ul {
-    padding-left: 0; 
+    padding-left: 0;
   }
 
   .lover-right li {
-    text-align: center; 
+    text-align: center;
   }
 
   .grid-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .img-box {
-    width: 100%; 
+    width: 100%;
   }
 
   .img2 {
-    grid-row: span 1; 
-    width: 100%; 
+    grid-row: span 1;
+    width: 100%;
   }
 
   .contact-container {
@@ -700,11 +696,23 @@ button:hover {
   }
 
   .about-features {
-   text-align: left;
+    text-align: left;
     text-align: center;
   }
 
   .trusted-badge {
     display: none; /* Hide trusted badge on tablet */
+  }
+}
+
+@media (min-width: 769px) {
+  .banner-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 120px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
   }
 }
